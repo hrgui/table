@@ -7,12 +7,14 @@ import { remove } from './utils';
 class ExpandableTable extends React.Component {
   static propTypes = {
     expandIconAsCell: PropTypes.bool,
+    expandIconRender: PropTypes.func,
     expandedRowKeys: PropTypes.array,
     expandedRowClassName: PropTypes.func,
     defaultExpandAllRows: PropTypes.bool,
     defaultExpandedRowKeys: PropTypes.array,
     expandIconColumnIndex: PropTypes.number,
     expandedRowRender: PropTypes.func,
+    expandIconRender: PropTypes.func,
     childrenColumnName: PropTypes.string,
     indentSize: PropTypes.number,
     onExpand: PropTypes.func,
@@ -34,6 +36,7 @@ class ExpandableTable extends React.Component {
     indentSize: 15,
     onExpand() {},
     onExpandedRowsChange() {},
+    
   }
 
   constructor(props) {

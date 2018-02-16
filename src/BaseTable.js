@@ -74,6 +74,7 @@ class BaseTable extends React.Component {
 
       const rowPrefixCls = `${prefixCls}-row`;
 
+      console.log(expander.props);
       const row = (
         <ExpandableRow
           {...expander.props}
